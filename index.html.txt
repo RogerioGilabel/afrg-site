@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AFRG Corretora de Seguros - Plano de Saúde</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f7fa;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .container {
+      background: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 400px;
+    }
+    h2 {
+      margin-bottom: 1rem;
+      color: #0a3d62;
+      text-align: center;
+    }
+    label {
+      display: block;
+      margin-top: 1rem;
+      color: #34495e;
+    }
+    input, select {
+      width: 100%;
+      padding: 0.5rem;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      margin-top: 0.5rem;
+    }
+    button {
+      margin-top: 1.5rem;
+      width: 100%;
+      padding: 0.75rem;
+      background: #0a3d62;
+      color: white;
+      font-weight: bold;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #1e5f9a;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Solicite uma Cotação</h2>
+    <form action="https://formsubmit.co/afrgseguros@yahoo.com" method="POST">
+      <input type="hidden" name="_captcha" value="false">
+      <label for="nome">Nome completo:</label>
+      <input type="text" id="nome" name="nome" required />
+
+      <label for="telefone">Telefone / WhatsApp:</label>
+      <input type="tel" id="telefone" name="telefone" required />
+
+      <label for="cidade">Cidade:</label>
+      <input type="text" id="cidade" name="cidade" required />
+
+      <label for="plano">Tipo de plano desejado:</label>
+      <select id="plano" name="plano">
+        <option value="individual">Individual</option>
+        <option value="familiar">Familiar</option>
+        <option value="empresarial">Empresarial</option>
+      </select>
+
+      <button type="submit">Quero meu plano ideal</button>
+    </form>
+  </div>
+</body>
+</html>
